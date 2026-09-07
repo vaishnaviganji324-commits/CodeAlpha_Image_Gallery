@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beautiful Image Gallery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            📸 Image Gallery
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <h1>Explore Beautiful Images</h1>
+
+        <p>
+            Discover amazing moments from nature, animals, travel and food.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <h2>Categories</h2>
+
+        <div class="category-buttons">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="nature">
+                🌿 Nature
+            </button>
+
+            <button class="category-btn" data-category="animals">
+                🐾 Animals
+            </button>
+
+            <button class="category-btn" data-category="travel">
+                ✈️ Travel
+            </button>
+
+            <button class="category-btn" data-category="food">
+                🍴 Food
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= IMAGE FILTERS ================= -->
+
+    <section class="image-filters">
+
+        <h2>Image Filters</h2>
+
+        <div class="filter-buttons">
+
+            <button class="image-filter-btn active" data-filter="none">
+                Original
+            </button>
+
+            <button class="image-filter-btn" data-filter="bright">
+                Bright
+            </button>
+
+            <button class="image-filter-btn" data-filter="grayscale">
+                Grayscale
+            </button>
+
+            <button class="image-filter-btn" data-filter="sepia">
+                Sepia
+            </button>
+
+            <button class="image-filter-btn" data-filter="contrast">
+                Contrast
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= IMAGE GALLERY ================= -->
+
+    <main class="gallery" id="gallery">
+
+
+        <!-- ================================================= -->
+        <!--                    NATURE                         -->
+        <!-- ================================================= -->
+
+
+        <!-- Nature 1 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Mountain Landscape"
+             data-description="Beautiful mountains surrounded by green nature."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                 alt="Mountain Landscape">
+
+            <div class="card-info">
+                <h3>Mountain Landscape</h3>
+                <p>Beautiful mountain scenery</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 2 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Green Forest"
+             data-description="A peaceful green forest filled with beautiful trees."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+                 alt="Green Forest">
+
+            <div class="card-info">
+                <h3>Green Forest</h3>
+                <p>Peaceful forest view</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 3 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Waterfall"
+             data-description="A beautiful waterfall flowing through a natural landscape."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=900&q=80"
+                 alt="Waterfall">
+
+            <div class="card-info">
+                <h3>Waterfall</h3>
+                <p>Beautiful flowing waterfall</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 4 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Sunset"
+             data-description="A peaceful sunset creating a beautiful evening sky."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                 alt="Sunset">
+
+            <div class="card-info">
+                <h3>Sunset</h3>
+                <p>Beautiful evening sky</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 5 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Ocean"
+             data-description="Blue ocean water stretching toward the horizon."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                 alt="Ocean">
+
+            <div class="card-info">
+                <h3>Ocean</h3>
+                <p>Blue ocean view</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 6 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Flower Garden"
+             data-description="Colorful flowers growing in a beautiful garden."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80"
+                 alt="Flower Garden">
+
+            <div class="card-info">
+                <h3>Flower Garden</h3>
+                <p>Colorful beautiful flowers</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 7 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Lake"
+             data-description="A calm lake surrounded by mountains and greenery."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80"
+                 alt="Lake">
+
+            <div class="card-info">
+                <h3>Lake</h3>
+                <p>Peaceful lake scenery</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 8 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Autumn Trees"
+             data-description="Beautiful trees showing colorful autumn leaves."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                 alt="Autumn Trees">
+
+            <div class="card-info">
+                <h3>Autumn Trees</h3>
+                <p>Colorful autumn nature</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 9 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="Green Hills"
+             data-description="Beautiful green hills under a bright sky."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+                 alt="Green Hills">
+
+            <div class="card-info">
+                <h3>Green Hills</h3>
+                <p>Beautiful green hills</p>
+            </div>
+
+        </div>
+
+
+        <!-- Nature 10 -->
+        <div class="photo-card"
+             data-category="nature"
+             data-title="River"
+             data-description="A peaceful river flowing through a natural landscape."
+             data-info="Category: Nature">
+
+            <img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=900&q=80"
+                 alt="River">
+
+            <div class="card-info">
+                <h3>River</h3>
+                <p>Peaceful river landscape</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!--                    ANIMALS                        -->
+        <!-- ================================================= -->
+
+
+        <!-- Animal 1 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Lion"
+             data-description="A majestic lion in its natural environment."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80"
+                 alt="Lion">
+
+            <div class="card-info">
+                <h3>Lion</h3>
+                <p>Majestic wild lion</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 2 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Elephant"
+             data-description="A beautiful elephant walking in the wild."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=900&q=80"
+                 alt="Elephant">
+
+            <div class="card-info">
+                <h3>Elephant</h3>
+                <p>Beautiful wild elephant</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 3 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Tiger"
+             data-description="A powerful tiger photographed in the wild."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=900&q=80"
+                 alt="Tiger">
+
+            <div class="card-info">
+                <h3>Tiger</h3>
+                <p>Powerful wild tiger</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 4 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Deer"
+             data-description="A peaceful deer standing among green trees."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=900&q=80"
+                 alt="Deer">
+
+            <div class="card-info">
+                <h3>Deer</h3>
+                <p>Peaceful forest deer</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 5 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Fox"
+             data-description="A cute fox enjoying the natural surroundings."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=900&q=80"
+                 alt="Fox">
+
+            <div class="card-info">
+                <h3>Fox</h3>
+                <p>Cute wild fox</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 6 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Horse"
+             data-description="A beautiful horse standing outdoors."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=900&q=80"
+                 alt="Horse">
+
+            <div class="card-info">
+                <h3>Horse</h3>
+                <p>Beautiful horse</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 7 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Panda"
+             data-description="A cute panda enjoying a peaceful moment."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&w=900&q=80"
+                 alt="Panda">
+
+            <div class="card-info">
+                <h3>Panda</h3>
+                <p>Cute panda</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 8 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Bird"
+             data-description="A colorful bird sitting peacefully on a branch."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=900&q=80"
+                 alt="Bird">
+
+            <div class="card-info">
+                <h3>Bird</h3>
+                <p>Colorful bird</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 9 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Butterfly"
+             data-description="A beautiful butterfly resting on a flower."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=900&q=80"
+                 alt="Butterfly">
+
+            <div class="card-info">
+                <h3>Butterfly</h3>
+                <p>Beautiful butterfly</p>
+            </div>
+
+        </div>
+
+
+        <!-- Animal 10 -->
+        <div class="photo-card"
+             data-category="animals"
+             data-title="Rabbit"
+             data-description="A cute rabbit sitting in a natural environment."
+             data-info="Category: Animals">
+
+            <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=900&q=80"
+                 alt="Rabbit">
+
+            <div class="card-info">
+                <h3>Rabbit</h3>
+                <p>Cute little rabbit</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!--                     TRAVEL                        -->
+        <!-- ================================================= -->
+
+
+        <!-- Travel 1 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Paris"
+             data-description="Beautiful city view of Paris."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                 alt="Paris">
+
+            <div class="card-info">
+                <h3>Paris</h3>
+                <p>Beautiful city of Paris</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 2 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Beach Vacation"
+             data-description="A relaxing tropical beach destination."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                 alt="Beach">
+
+            <div class="card-info">
+                <h3>Beach Vacation</h3>
+                <p>Relaxing tropical beach</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 3 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Mountain Trip"
+             data-description="A wonderful mountain destination for travelers."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=80"
+                 alt="Mountain Trip">
+
+            <div class="card-info">
+                <h3>Mountain Trip</h3>
+                <p>Adventure in the mountains</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 4 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="New York"
+             data-description="Amazing city architecture and skyline."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?auto=format&fit=crop&w=900&q=80"
+                 alt="New York">
+
+            <div class="card-info">
+                <h3>New York</h3>
+                <p>Famous city skyline</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 5 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Road Trip"
+             data-description="An exciting road trip through a beautiful landscape."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=80"
+                 alt="Road Trip">
+
+            <div class="card-info">
+                <h3>Road Trip</h3>
+                <p>Exciting road journey</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 6 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Desert"
+             data-description="Beautiful desert scenery under the open sky."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=900&q=80"
+                 alt="Desert">
+
+            <div class="card-info">
+                <h3>Desert</h3>
+                <p>Beautiful desert landscape</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 7 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Venice"
+             data-description="Beautiful canals and architecture of Venice."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=80"
+                 alt="Venice">
+
+            <div class="card-info">
+                <h3>Venice</h3>
+                <p>Beautiful Venice canals</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 8 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Tropical Island"
+             data-description="A peaceful tropical island surrounded by blue water."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                 alt="Tropical Island">
+
+            <div class="card-info">
+                <h3>Tropical Island</h3>
+                <p>Peaceful island destination</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 9 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="London"
+             data-description="Beautiful architecture and streets of London."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80"
+                 alt="London">
+
+            <div class="card-info">
+                <h3>London</h3>
+                <p>Beautiful London city</p>
+            </div>
+
+        </div>
+
+
+        <!-- Travel 10 -->
+        <div class="photo-card"
+             data-category="travel"
+             data-title="Airplane Journey"
+             data-description="A beautiful view representing travel and adventure."
+             data-info="Category: Travel">
+
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80"
+                 alt="Airplane">
+
+            <div class="card-info">
+                <h3>Airplane Journey</h3>
+                <p>Travel and adventure</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!--                       FOOD                        -->
+        <!-- ================================================= -->
+
+
+        <!-- Food 1 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Pizza"
+             data-description="Delicious pizza freshly prepared with tasty toppings."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+                 alt="Pizza">
+
+            <div class="card-info">
+                <h3>Pizza</h3>
+                <p>Delicious cheesy pizza</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 2 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Burger"
+             data-description="A tasty burger served with fresh ingredients."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                 alt="Burger">
+
+            <div class="card-info">
+                <h3>Burger</h3>
+                <p>Tasty delicious burger</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 3 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Pasta"
+             data-description="Fresh pasta prepared with delicious ingredients."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80"
+                 alt="Pasta">
+
+            <div class="card-info">
+                <h3>Pasta</h3>
+                <p>Delicious Italian pasta</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 4 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Dosa"
+             data-description="Crispy South Indian dosa served fresh."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=900&q=80"
+                 alt="Dosa">
+
+            <div class="card-info">
+                <h3>Dosa</h3>
+                <p>Crispy South Indian dosa</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 5 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Indian Thali"
+             data-description="A traditional Indian meal with a variety of dishes."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80"
+                 alt="Indian Thali">
+
+            <div class="card-info">
+                <h3>Indian Thali</h3>
+                <p>Traditional Indian meal</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 6 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Dessert"
+             data-description="A delicious sweet dessert beautifully presented."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80"
+                 alt="Dessert">
+
+            <div class="card-info">
+                <h3>Dessert</h3>
+                <p>Sweet delicious dessert</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 7 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Fresh Fruits"
+             data-description="Colorful fresh fruits arranged beautifully."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=900&q=80"
+                 alt="Fresh Fruits">
+
+            <div class="card-info">
+                <h3>Fresh Fruits</h3>
+                <p>Healthy colorful fruits</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 8 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Ice Cream"
+             data-description="Cold and delicious ice cream dessert."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80"
+                 alt="Ice Cream">
+
+            <div class="card-info">
+                <h3>Ice Cream</h3>
+                <p>Delicious creamy ice cream</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 9 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Pancakes"
+             data-description="Soft pancakes served with delicious toppings."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80"
+                 alt="Pancakes">
+
+            <div class="card-info">
+                <h3>Pancakes</h3>
+                <p>Soft tasty pancakes</p>
+            </div>
+
+        </div>
+
+
+        <!-- Food 10 -->
+        <div class="photo-card"
+             data-category="food"
+             data-title="Chocolate Cake"
+             data-description="Rich and delicious chocolate cake."
+             data-info="Category: Food">
+
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                 alt="Chocolate Cake">
+
+            <div class="card-info">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate cake</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= IMAGE PREVIEW / LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox">
+
+        <div class="preview-box">
+
+            <!-- Close -->
+            <button class="close-btn" id="closeBtn">
+                ×
+            </button>
+
+
+            <!-- Previous -->
+            <button class="nav-btn previous" id="prevBtn">
+                ‹
+            </button>
+
+
+            <!-- Preview Image -->
+            <img id="previewImage"
+                 src=""
+                 alt="Preview">
+
+
+            <!-- Next -->
+            <button class="nav-btn next" id="nextBtn">
+                ›
+            </button>
+
+
+            <!-- Image Details -->
+            <div class="image-details">
+
+                <h2 id="previewTitle">
+                    Image Title
+                </h2>
+
+                <p id="previewDescription">
+                    Image Description
+                </p>
+
+                <small id="previewInfo">
+                    Image Information
+                </small>
+
+            </div>
+
+
+            <!-- Actions -->
+            <div class="actions">
+
+                <button id="downloadBtn">
+                    ↓ Download
+                </button>
+
+                <button id="shareBtn">
+                    ↗ Share
+                </button>
+
+                <button id="likeBtn">
+                    ♡ Like
+                    <span id="likeCount">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

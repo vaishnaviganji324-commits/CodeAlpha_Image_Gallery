@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #080b10;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 80px;
+
+    background: #0d1118;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #202630;
+}
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.logo span {
+    font-size: 30px;
+}
+
+
+.logo h2 {
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+.header nav {
+    display: flex;
+
+    gap: 28px;
+}
+
+
+.header nav a {
+    color: #bfc5ce;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.header nav a:hover {
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+
+    padding: 50px 20px 30px;
+}
+
+
+.hero h1 {
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero p {
+    color: #8f98a5;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories,
+.image-filters {
+    text-align: center;
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+}
+
+
+.categories h2,
+.image-filters h2 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+.category-buttons,
+.filter-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.category-btn,
+.image-filter-btn {
+    border: 1px solid #303844;
+
+    background: #121821;
+
+    color: #c7cdd5;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-size: 13px;
+}
+
+
+.category-btn:hover,
+.image-filter-btn:hover {
+    background: #252d38;
+
+    color: white;
+}
+
+
+.category-btn.active,
+.image-filter-btn.active {
+    background: white;
+
+    color: #111;
+
+    border-color: white;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    width: 88%;
+
+    max-width: 1300px;
+
+    margin: 40px auto 70px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.photo-card {
+    background: #11161e;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    border: 1px solid #1c232d;
+
+    transition: 0.3s;
+}
+
+
+.photo-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #596372;
+}
+
+
+.photo-card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.photo-card:hover img {
+    transform: scale(1.05);
+}
+
+
+.card-info {
+    padding: 14px;
+}
+
+
+.card-info h3 {
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+
+.card-info p {
+    color: #858e9b;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.90);
+
+    backdrop-filter: blur(8px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+}
+
+
+.lightbox.show {
+    display: flex;
+}
+
+
+.preview-box {
+    width: 520px;
+
+    max-width: 95%;
+
+    background: #141922;
+
+    border: 1px solid #303844;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =========================
+   PREVIEW IMAGE
+========================= */
+
+#previewImage {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   IMAGE FILTER EFFECTS
+========================= */
+
+.filter-bright {
+    filter: brightness(1.3) saturate(1.15);
+}
+
+
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+
+.filter-sepia {
+    filter: sepia(100%);
+}
+
+
+.filter-contrast {
+    filter: contrast(1.5) saturate(1.2);
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-btn {
+    position: absolute;
+
+    top: 42%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    background: rgba(0, 0, 0, 0.55);
+
+    color: white;
+
+    font-size: 35px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.3s;
+}
+
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.previous {
+    left: 15px;
+}
+
+
+.next {
+    right: 15px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.image-details {
+    padding: 18px 20px 12px;
+}
+
+
+.image-details h2 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.image-details p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #b8bec8;
+
+    margin-bottom: 8px;
+}
+
+
+.image-details small {
+    color: #747d89;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 12px 20px 18px;
+
+    border-top: 1px solid #252c36;
+}
+
+
+.actions button {
+    flex: 1;
+
+    padding: 9px;
+
+    background: #171d26;
+
+    border: 1px solid #303844;
+
+    border-radius: 5px;
+
+    color: #cbd0d8;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+
+.actions button:hover {
+    background: #252d38;
+
+    color: white;
+}
+
+
+.actions button.liked {
+    background: #29202a;
+
+    color: #ff8fa3;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid #202630;
+
+    color: #737c88;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .gallery {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .header nav {
+        gap: 15px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        width: 92%;
+    }
+
+
+    .photo-card img {
+        height: 180px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .preview-box {
+        width: 95%;
+    }
+
+
+    #previewImage {
+        height: 250px;
+    }
+
+
+    .actions {
+        flex-direction: column;
+    }
+
+}
